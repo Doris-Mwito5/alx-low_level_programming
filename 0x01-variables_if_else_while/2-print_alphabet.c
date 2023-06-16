@@ -10,9 +10,9 @@ int main(void)
 {
 	char x;
 
-	for (x = 'a'; c = 'z';)
+	for (x = 'a'; x = 'z';)
 	{
-		purchar(x);
+		putchar(x);
 	}
 	return (0);
 }

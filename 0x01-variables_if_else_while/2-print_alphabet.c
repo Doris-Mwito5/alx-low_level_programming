@@ -1,18 +1,17 @@
 #include <stdio.h>
-/**
- *main - main function of the program
- *program on C variables
- *
- * Return: returns zero when the program executes successfully
- */
 
+/**
+ *main - Main function of the program
+ *
+ *Return: Returns zero when the program executes successfully
+ */
 int main(void)
 {
-	char ch;
+	char x;
 
-	for (ch = 'a' ; ch <= 'z' ; ch++)
+	for (x = 'a'; x <= 'z'; x++)
 	{
-		putchar(ch);
+		putchar(x);
 	}
 	return (0);
 }

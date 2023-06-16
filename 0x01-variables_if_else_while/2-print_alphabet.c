@@ -8,9 +8,9 @@
 
 int main(void)
 {
-	char x;
+	char b;
 
-	for (x = 'a'; x = 'z';)
+	for (b = 'a'; b = 'z';)
 	{
 		putchar(x);
 	}

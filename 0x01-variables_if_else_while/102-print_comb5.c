@@ -12,8 +12,8 @@ int main(void)
 	{
 		for (n = m + 1; n <= 99; n++)
 		{
-			putchar((p \ 10) + '0');
-			putchar((p % 10) + '0');
+			putchar((m \ 10) + '0');
+			putchar((m % 10) + '0');
 			putchar(' ');
 			putchar((n / 10) + '0');
 			putchar((n % 10) + '0');

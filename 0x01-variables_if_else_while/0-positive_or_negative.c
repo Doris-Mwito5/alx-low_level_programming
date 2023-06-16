@@ -8,17 +8,17 @@
 int main(void)
 {
 	int n;
-if (n < 0)
+if (n > 0)
 {
-	printf("is negative");
+	printf("%d is positive\n", n);
 }
-else if (n > 0)
+else if (n == 0)
 {
-	printf("is positive");
+	printf("%d is zero\n", n);
 }
 else
 {
-	printf("is zero");
+	printf("%d is negative", n);
 }
 
 return (0);

@@ -6,30 +6,27 @@
  */
 int main(void)
 {
-	int m, n, o;
+	int k, l, m;
 
-	for (m = '0'; m < '9'; m++)
+	for (k = '0'; k < '9'; k++)
 	{
-		for (n = m + 1; n <= '9'; n++)
+		for (l = k + 1; l <= '9'; l++)
 		{
-			for (o = n + 1; o <= '9'; o++)
+			for (m = l + 1; m <= '9'; m++)
 			{
-				if (( n != m) != o)
-				{
-					putchar(m
-		{
-			 if (( n != m) != o)
-			 {
-				 putchar(m);
-				 purchar(n);
-				 putchar(o);
-				 if (m == '7' && n == '8')
-					 continue;
-				 putchar(',');
-				 putchar(' ');
-			 }
+			if ((l != k) != m)
+			{
+			putchar(k);
+			putchar(l);
+			putchar(m);
+			if (k == '7' && l == '8')
+				continue;
+			putchar(',');
+			putchar(' ');
+			}
+			}
 		}
-		}
+
 	}
 	putchar('\n');
 	return (0);

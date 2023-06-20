@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int a;
+	int count;
 	unsigned long fi1 = 0, fi2 = 1, sum;
 	unsigned long fi1_half1, fi1_half2, fi2_half1, fi2_half2;
 	unsigned long half1, half2;

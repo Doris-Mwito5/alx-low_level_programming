@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * main - main function
- *
+ * print_times_table - main function
+ *@n: starting point
  * Return: returns 0
  */
-int main(void)
+void print_times_table(int n)
 {
 	int a, b, c;
 
@@ -13,6 +13,7 @@ int main(void)
 		for (a = 0; a <= n; a++)
 		{
 			_putchar('0');
+
 			for (b = 1; b <= n; b++)
 			{
 				_putchar(',');
@@ -31,7 +32,7 @@ int main(void)
 				{
 					_putchar((c / 10) + '0');
 				}
-				_putchar((prod % 10) + '0');
+				_putchar((c % 10) + '0');
 			}
 			_putchar('\n');
 		}

@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - main function of the program
+ * print_alphabet - makes the alphabet
  *
  * Return: returns 0 when the program executes successfully
  */
-int main(void)
+void print_alphabet(void)
 {
 	char x;
 

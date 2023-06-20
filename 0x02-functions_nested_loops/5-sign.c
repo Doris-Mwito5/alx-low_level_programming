@@ -5,6 +5,8 @@
  * Return: returns 1 for +ve number , -1 for -ve numbers and 0 for the rest
  */
 int print_sign(int n);
+int n;
+
 {
 	if (n > 0)
 	{

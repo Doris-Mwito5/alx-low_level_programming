@@ -1,8 +1,8 @@
-#include <stdio.h>
+#include <main.h>
 /**
- * print_times_table - main function
- *@n: starting point
- * Return: returns 0
+ * print_times_table - Prints the times table
+ *
+ * @n: The value
  */
 void print_times_table(int n)
 {
@@ -13,7 +13,6 @@ void print_times_table(int n)
 		for (a = 0; a <= n; a++)
 		{
 			_putchar('0');
-
 			for (b = 1; b <= n; b++)
 			{
 				_putchar(',');

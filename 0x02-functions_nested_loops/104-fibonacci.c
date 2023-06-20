@@ -17,12 +17,12 @@ int main(void)
 		sum = fi1 + fi2;
 		printf("%lu, ", sum);
 		fi1 = fi2;
-		fi2 = sum
+		fi2 = sum;
 	}
 	fi1_ha1 = fi1 / 10000000000;
 	fi2_ha1 = fi2 / 10000000000;
-	fi1_ha2 = f1 % 10000000000;
-	fi2_ha2 = f2 % 10000000000;
+	fi1_ha2 = fi1 % 10000000000;
+	fi2_ha2 = fi % 10000000000;
 	for (a = 93; a < 99; a++)
 	{
 		ha1 = fi1_ha1 + fi2_ha1;
@@ -40,6 +40,6 @@ int main(void)
 		fi1_ha2 = ha1;
 		fi2_ha2 = ha2;
 	}
-	print("\n");
+	printf("\n");
 	return (0);
 }

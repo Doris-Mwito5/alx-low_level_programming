@@ -8,37 +8,39 @@ int main(void)
 {
 	int a;
 	unsigned long fi1 = 0, fi2 = 1, sum;
-	unsigned long fi1_ha1, fi1_ha2, fi2_ha1, fi2_ha2;
-	unsigned long ha1, ha2;
+	unsigned long fi1_half1, fi1_half2, fi2_half1, fi2_half2;
+	unsigned long half1, half2;
 
 
-	for (a = 0; a < 92; a++)
+	for (count = 0; count < 92; count++)
 	{
 		sum = fi1 + fi2;
 		printf("%lu, ", sum);
+
 		fi1 = fi2;
 		fi2 = sum;
 	}
-	fi1_ha1 = fi1 / 10000000000;
-	fi2_ha1 = fi2 / 10000000000;
-	fi1_ha2 = fi1 % 10000000000;
-	fi2_ha2 = fi2 % 10000000000;
-	for (a = 93; a < 99; a++)
+	fi1_half1 = fi1 / 10000000000;
+	fi2_half1 = fi2 / 10000000000;
+	fi1_half2 = fi1 % 10000000000;
+	fi2_half2 = fi2 % 10000000000;
+
+	for (count = 93; count < 99; count++)
 	{
-		ha1 = fi1_ha1 + fi2_ha1;
-		ha2 = fi1_ha2 + fi2_ha2;
-		if (fi1_ha2 + fi2_ha2 > 9999999999)
+		half1 = fi1_half1 + fi2_half1;
+		half2 = fi1_half2 + fi2_half2;
+		if (fi1_half2 + fi2_half2 > 9999999999)
 		{
-			ha1 += 1;
-			ha2 %= 10000000000;
+			half1 += 1;
+			half2 %= 10000000000;
 		}
-		printf("%lu%lu", ha1, ha2);
-		if (a != 98)
+		printf("%lu%lu", half1, half2);
+		if (count != 98)
 			printf(", ");
-		fi1_ha1 = fi2_ha1;
-		fi1_ha2 = fi2_ha2;
-		fi1_ha2 = ha1;
-		fi2_ha2 = ha2;
+		fi1_half1 = fi2_half1;
+		fi1_half2 = fi2_half2;
+		fi2_half1 = half1;
+		fi2_half2 = half2;
 	}
 	printf("\n");
 	return (0);

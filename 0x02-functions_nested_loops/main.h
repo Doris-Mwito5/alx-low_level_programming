@@ -1,4 +1,4 @@
-#\fndef main_h
+#ifndef main_h
 #define main_h
 
 int putchar(char);
@@ -14,4 +14,4 @@ void times_table(void);
 int add(int, int);
 void print_to_98(int n);
 
-#end\f
+#endif

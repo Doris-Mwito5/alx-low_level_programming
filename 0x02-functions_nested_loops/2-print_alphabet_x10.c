@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * print_alphabet_x10 - makes alphabet
  *
@@ -17,5 +16,6 @@ void print_alphabet_x10(void)
 			_putchar(x);
 		}
 		_putchar('\n');
+		y++
 	}
 }

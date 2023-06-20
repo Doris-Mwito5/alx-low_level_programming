@@ -22,7 +22,7 @@ int main(void)
 	fi1_ha1 = fi1 / 10000000000;
 	fi2_ha1 = fi2 / 10000000000;
 	fi1_ha2 = fi1 % 10000000000;
-	fi2_ha2 = fi % 10000000000;
+	fi2_ha2 = fi22 % 10000000000;
 	for (a = 93; a < 99; a++)
 	{
 		ha1 = fi1_ha1 + fi2_ha1;

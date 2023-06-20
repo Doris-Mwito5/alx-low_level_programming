@@ -2,24 +2,24 @@
 /**
  * main - main function
  *
- * Return: returns 0 when execution is sucessful
+ * Return: returns 0
  */
 int main(void)
 {
-	unsigned long f1 = 0, f2 = 1, sum;
-	float total;
+	unsigned long fi1 = 0, fi2 = 1, fisum;
+	float total_sum;
 
 
 	while (1)
 	{
-		sum = f1 + f2;
-		if (sum > 400000)
+		fisum = fi1 + fi2;
+		if (fisum > 4000000)
 			break;
-		if ((sum % 2) == 0)
-			total += sum;
-		f1 = f2;
-		f2 = sum;
+		if ((fisum % 2) == 0)
+			total_sum += fisum;
+		fi1 = fi2;
+		fi2 = fisum
 	}
-	printf("%.0f\n", total);
+	printf("%.0f\n", total_sum);
 	return (0);
 }

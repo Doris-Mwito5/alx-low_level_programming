@@ -18,7 +18,7 @@ int main(void)
 		if ((fisum % 2) == 0)
 			total_sum += fisum;
 		fi1 = fi2;
-		fi2 = fisum
+		fi2 = fisum;
 	}
 	printf("%.0f\n", total_sum);
 	return (0);

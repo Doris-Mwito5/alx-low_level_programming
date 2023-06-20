@@ -2,24 +2,25 @@
 /**
  * main - main function
  *
- * Return: returns 0 when executed successfully
+ * Return: returns 0
  */
 int main(void)
 {
-	int a;
-	unsigned long f1 = 0, f2 = 1, sum;
+	int count;
+	unsigned long fi1 = 0, fi2 = 1, sum;
 
 
-	for (a = 0; a < 50; a++)
+	for (count = 0; count < 50; count++)
 	{
-		sum = f1 + f2;
+		sum = fi1 + fi2;
 		printf("%lu", sum);
-		f1 = f2;
-		f2 = sum;
-		if (a == 49)
+		fi1 = fi2;
+		fi2 = sum;
+
+		if (count == 49)
 			printf("\n");
 		else
-			printf(",");
+			printf(", ");
 	}
 	return (0);
 }

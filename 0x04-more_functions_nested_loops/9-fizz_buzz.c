@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - prints numbers
+ * main - main function
  * Return: returns 0 on successful execution
  */
 int main(void)
@@ -10,25 +10,25 @@ int main(void)
 
 	for (a = 1; a <= 100; a++)
 	{
-		if (i % 3 == 0 && i % 5 != 0)
+		if (a % 3 == 0 && a % 5 != 0)
 		{
 			printf("Fizz");
 		}
-		else if (i % 5 == 0 && i % 3 != 0)
+		else if (a % 5 == 0 && a % 3 != 0)
 		{
-			printf(" Buzz");
+			printf("Buzz");
 		}
-		else if (i % 3 == 0 && i % 5 == 0)
+		else if (a % 3 == 0 && a % 5 == 0)
 		{
-			printf(" FizzBuzz");
+			printf("FizzBuzz");
 		}
 		else if (i == 1)
 		{
-			printf("%d", i);
+			printf("%d", a);
 		}
 		else
 		{
-			printf(" %d", i);
+			printf(" %d", a);
 		}
 	}
 	printf("\n");

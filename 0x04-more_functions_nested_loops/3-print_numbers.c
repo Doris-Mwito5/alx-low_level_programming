@@ -1,15 +1,16 @@
 #include "main.h"
 /**
-* print_numbers - outputs numbers 0-9
-* Return: returns success (0)
-*/
+ * print_numbers - prints the numbers from 0 to 9
+ * A program that prints numbers from 0 to 9 except 2 and 4
+ * Return: returns the numbers from 0 to 9
+ */
 void print_numbers(void)
 {
 	int a;
 
-	for (a = '0'; a <= '9'; a++)
+	for (a = 0; a <= 9; a++)
 	{
-		_putchar(a '0');
+		_putchar(x + '0');
 	}
 	_putchar('\n');
 }

@@ -18,10 +18,10 @@ int main(void)
 	for (a = 0; a < 100; a++)
 
 	{
-		pass[a] = rand() % 78;
+		x[a] = rand() % 78;
 
-		c += (pass[a] + '0');
-		putchar(pass[a] + '0');
+		c += (x[a] + '0');
+		putchar(x[a] + '0');
 		if ((2772 - c) - '0' < 78)
 		{
 			b = 2772 - c - '0';

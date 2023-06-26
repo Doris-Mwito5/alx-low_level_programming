@@ -1,30 +1,25 @@
 #include "main.h"
 /**
  * _atoi - converts string to an integer
- * @s: the integer
+ * @s: the int
  * Return: returns 0 on successful execution
  */
 int _atoi(char *s)
 {
 	int a;
 	int b;
-	char *c;
+	int c;
 
-	c = s;
-	b = 0;
-	a = 1;
-	while (*c != '\0' && (*c < '0' || *c > '9'))
+	while (s[c] && (s[c] < '0' || s[c] > '9'))
 	{
-		if (*c == '-')
-			a *= -1;
-		c++;
+		if (s[c] == '-')
+			c++
+
 	}
-	if (*c != '\0')
+	while (s[c] && (s[c] >= '0' && <= '9'))
 	{
-		do {
-			b = b * 10 + (*c - '0');
-			c++;
-		} while (*c >= '0' && *c <= '9');
+		a = (a * 10) + (s[c] - '0');
+		c++
 	}
-	return (b * a);
+	return (a * b);
 }

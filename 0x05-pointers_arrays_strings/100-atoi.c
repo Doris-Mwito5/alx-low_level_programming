@@ -23,7 +23,7 @@ int _atoi(char *s)
 	{
 		do {
 			b = b * 10 + (*c - '0');
-			temp++;
+			c++;
 		} while (*c >= '0' && *c <= '9');
 	}
 	return (b * a);

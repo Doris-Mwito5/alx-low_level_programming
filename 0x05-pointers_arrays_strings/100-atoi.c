@@ -7,8 +7,8 @@
 int _atoi(char *s)
 {
 	int x;
-
-	usigned int y;
+	
+	int y;
 
 	char *a;
 

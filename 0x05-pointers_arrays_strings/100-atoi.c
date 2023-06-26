@@ -6,31 +6,25 @@
  */
 int _atoi(char *s)
 {
-	int x;
-	
-	int y;
+	int a;
+	int b;
+	char *c;
 
-	char *a;
-
-
-	a = s;
-	y = 0;
-	x = 1;
-
-	while (*a != '\0' && (*a < '0' || *a > '9'))
+	c = s;
+	b = 0;
+	a = 1;
+	while (*c != '\0' && (*c < '0' || *c > '9'))
 	{
-		if (*a == '-')
-			x *= -1;
-		a++;
+		if (*c == '-')
+			a *= -1;
+		c++;
 	}
-	if (*a != '\0')
+	if (*c != '\0')
 	{
 		do {
-			y = y * 10 + (*a - '0');
-			a++;
-		} while (*a >= '0' && *a <= '9');
+			b = b * 10 + (*c - '0');
+			temp++;
+		} while (*c >= '0' && *c <= '9');
 	}
-
-	return (y * x);
+	return (b * a);
 }
-

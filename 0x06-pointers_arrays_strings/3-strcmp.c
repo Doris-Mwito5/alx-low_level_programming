@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * reverse_array -  Reverses the content of an array of integers
- * @n: Array elements
- * @a: character value
+ * _strcmp -  Reverses the content of an array of integers
+ * @s1: character value1
+ * @s2: character value2
  * Return: returns 0 on successful execution
  */
-void reverse_array(int *a, int n)
+int _strcmp(char *s1, char *s2)
 {
 	int a;
 

@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * _strstr - locates a substring
  * @needle: first occurrence of the substring
@@ -17,7 +18,7 @@ char *_strstr(char *haystack, char *needle)
 	{
 		for (m = 0; needle[m]; m++)
 		{
-			if (haystack[i] != needle[m])
+			if (haystack[m] != needle[m])
 				break;
 		}
 		if (m != n)

@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "holberton.h"
+#include "main.c"
 /**
  * _strpbrk - srchs a string for any of a set of bytes
  * @s: the string

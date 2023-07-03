@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.c"
 /**
  * _strspn - Entry point
  * @s: value1

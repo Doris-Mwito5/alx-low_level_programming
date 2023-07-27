@@ -1,5 +1,3 @@
-4-free_list.c
-
 #include <stdlib.h>
 #include "lists.h"
 

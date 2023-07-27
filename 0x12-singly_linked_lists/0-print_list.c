@@ -21,5 +21,5 @@ size_t print_list(const list_t *h)
 		c++;
 	}
 
-	return (s);
+	return (c);
 }

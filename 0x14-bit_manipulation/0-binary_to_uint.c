@@ -1,5 +1,4 @@
-#include <stdio>
-#include <stdlib>
+#include "main.h"
 
 /**
  * conversion - a function to convert

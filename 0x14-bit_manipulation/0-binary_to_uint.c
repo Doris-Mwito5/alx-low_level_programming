@@ -1,5 +1,4 @@
-#include <stdio>
-#include <stdlib>
+#include "main.h"
 
 /**
  * conversion - a function to convert
@@ -11,16 +10,15 @@
 unsigned int conversion(const char *str)
 {
 	unsigned int a;
-	unsigned int i;
+	int i;
 
-	for (i = 0; str[i] != '\0'; i++)
+	if (!b)
+		return (0);
+	for (i = 0; b[i]; i++)
 	{
-		if (str[i] == '1')
-			a = (a << 1) | 1;
-		else if (str[i] == '0')
-			a <<= 1;
-		else if (str[i] != '0' && str[i] != '1')
+		if (b[i] < '0' || b[i] > '1')
 			return (0);
+		a = 2 * a + (b[i] - '0');
 	}
 
 	return (a);
